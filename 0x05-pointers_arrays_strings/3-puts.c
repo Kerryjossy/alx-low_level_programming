@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- * _puts - prints string
- * @str: string
- * Return: void
+ * _puts - prints a string
+ * @str: input
+ * Return: none
  */
-
 void _puts(char *str)
 {
-	int i = 0;
+	int count = 0;
 
-	while (str[i] != '\0')
+	while (count >= 0)
 	{
-		_putchar(str[i]);
-		i++;
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		_putchar(str[count]);
+		count++;
 	}
-
-	_putchar('\n');
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-
