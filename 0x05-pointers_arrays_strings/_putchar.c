@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * _putchar - write anything here
- * @c: Anything here
+ * _putchar - writes the character
+ * @c: Character
  *
- * Return: anything
+ * Return: none
  */
 int _putchar(char c)
 {
-       return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
